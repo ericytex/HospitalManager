@@ -3,242 +3,360 @@
     ViewBag.Title = "Patient Registrations";
 }
 <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <h2>
-            Patient Registration
-        </h2>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-            <li class="active">Here</li>
-        </ol>
-    </section>
+<section class="content-header">
+    <h2>
+        Patient Registration
+    </h2>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+    </ol>
+</section>
 
 
-    <div class="col-md-6">
-        <div class="box box-primary">
-            
-                <div class="text-center">
-                    <h3 class="box-title">Patient Information</h3>
-                </div>
-            
-            <div class="box-body">
-                <form role="form">
-                    <div class="col-xs-6">
-                        <label>Patient File Number</label>
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
-                    </div>
+<div class="col-md-6">
+    <div class="box box-primary">
 
-                    <!-- Enrolled Date -->
-                    <div class="form-group">
-
-                        <label>Enrolled Date:</label>
-
-                        <div class="input-group date">
-                            <div class="col-xs-5">
-                                <i class="fa fa-calendar"></i>
-                            </div>
-                            <input type="text" class="form-control pull-right" id="datepicker">
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <label>Last Name:</label>
-
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
-                        <!-- /.Email Address -->
-                    </div>
-                    <!-- /.form group -->
-                    <!-- /.Middle Name -->
-                    <div class="col-xs-4">
-                        <label>Middle Name:</label>
-
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
-                        <!-- /.Email Address -->
-                    </div>
-                    <!-- /.First Name -->
-                    <div class="col-xs-4">
-                        <label>Middle Name:</label>
-
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
-                        <!-- /.Email Address -->
-                    </div>
-                    <!-- /.Marital status-->
-                    <div class="col-xs-3">
-                        <label>MaritalStatus:</label>
-
-                        <div class="form-group">
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected">Married</option>
-                                <option>Single</option>
-                                <option>Not Applicable</option>
-                            </select>
-                            <!-- /.Marital status -->
-                        </div>
-                    </div>
-                    <!-- /.Birth Date -->
-                    <div class="col-xs-4">
-                        <label>Date:</label>
-
-                        <div class="input-group date">
-                            <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                            </div>
-                            <input type="text" class="form-control pull-right" id="datepicker">
-                        </div>
-                        <!-- /.input group -->
-                    </div>
-                    <!-- /.Birth Date -->
-                    <!-- /.Age -->
-                    <div class="col-xs-2">
-                        <label>Age:</label>
-
-                        <input type="number" class="form-control" placeholder="1" autocomplete="off">
-                        <!-- /.Age -->
-                    </div>
-                    <!-- .Sex -->
-                    <div class="col-xs-3">
-                        <label>Gender:</label>
-                        <select class="form-control select2" style="width: 100%;">
-                            <option selected="selected">Male</option>
-                            <option>Female</option>
-                        </select>
-                        <!-- /.Sex -->
-                    </div>
-                    <!-- .Address -->
-                    <div class="col-xs-12">
-                        <label>Address:</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter ..." autocomplete="off">
-                        </div>
-                    </div>
-                    <!-- /.Address -->
-                    <!-- .Cell Phone -->
-                    <div class="col-xs-6">
-                        <label>Cell Phone Number:</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
-                        </div>
-                    </div>
-                    <!-- /.Cell Phone -->
-                    <!-- .Home Phone -->
-                    <div class="col-xs-6">
-                        <label>Home Phone Number:</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
-                        </div>
-                    </div>
-                    <!-- /.Home Phone -->
-                    <!-- .Occupation  -->
-                    <div class="col-xs-4">
-                        <label>Occupation:</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="" autocomplete="off">
-                        </div>
-                    </div>
-                    <!-- /.Occupation  -->
-                    <!-- .Employer  -->
-                    <div class="col-xs-4">
-                        <label>Employer:</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="" autocomplete="off">
-                        </div>
-                    </div>
-                    <!-- /.Employer  -->
-                    <!-- .Employer Contact -->
-                    <div class="col-xs-4">
-                        <label>EmployerNumber:</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
-                        </div>
-                    </div>
-                    <!-- /.Employer Contact  -->
-                    <!-- .Employer Contact -->
-                    <div class="col-xs-12">
-                        <label>Reason for Visit:</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Reason/reffered by..." autocomplete="off">
-                        </div>
-                    </div>
-                    <!-- /.Employer Contact  -->
-                </form>
-
-                <!-- /.form group -->
-            </div>
-
-            <!-- /.box-body -->
+        <div class="text-center">
+            <h3 class="box-title">Patient Information</h3>
         </div>
-    </div>
 
-    <div class="col-md-6">
-        <div class="box box-primary">
-            <div class="text-center">
-                <h3 class="box-title">Insurance Information</h3>
-                <small>(Please give your insurance card to the receptionist.)</small>
-            </div>
-            <div class="box-body">
-                            <!-- Date -->
+        <div class="box-body">
+            <form role="form">
+                <div class="col-xs-6">
+                    <label>Patient File Number</label>
+                    <input type="text" class="form-control" placeholder="" autocomplete="off">
+                </div>
+
+                <!-- Enrolled Date -->
                 <div class="form-group">
 
-                    <div class="col-xs-6">
-                        <label>Principle Member:</label>
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    <label>Enrolled Date:</label>
+
+                    <div class="input-group date">
+                        <div class="col-xs-5">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right" id="datepicker">
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <label>Last Name:</label>
+
+                    <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    <!-- /.Email Address -->
+                </div>
+                <!-- /.form group -->
+                <!-- /.Middle Name -->
+                <div class="col-xs-4">
+                    <label>Middle Name:</label>
+
+                    <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    <!-- /.Email Address -->
+                </div>
+                <!-- /.First Name -->
+                <div class="col-xs-4">
+                    <label>Middle Name:</label>
+
+                    <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    <!-- /.Email Address -->
+                </div>
+                <!-- /.Marital status-->
+                <div class="col-xs-3">
+                    <label>MaritalStatus:</label>
+
+                    <div class="form-group">
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Married</option>
+                            <option>Single</option>
+                            <option>Not Applicable</option>
+                        </select>
+                        <!-- /.Marital status -->
+                    </div>
+                </div>
+                <!-- /.Birth Date -->
+                <div class="col-xs-4">
+                    <label>Date:</label>
+
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right" id="datepicker">
                     </div>
                     <!-- /.input group -->
-                    <!-- /.form group -->
-
-                    <div class="col-xs-6">
-                        <label>Birth Date:</label>
-                        <div class="input-group date">
-                            <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                            </div>
-                            <input type="text" class="form-control pull-right" id="datepicker">
-                        </div>
-                        <!-- /.input group -->
-                    </div>
-                    <!-- .Address -->
-                    <div class="col-xs-12">
-                        <label>Address (if different):</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter ..." autocomplete="off">
-                        </div>
-                    </div>
-                    <!-- /.Address -->
-                    <!-- .Principle Status -->
-                    <div class="col-xs-12">
-                        <label>Is the principle a patient here?:</label>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter ..." autocomplete="off">
-                        </div>
-                    </div>
-
-                            <!-- /.Address -->
-                            <!-- Date and time range -->
-                            <div class="form-group">
-                                <label>Date and time range:</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-clock-o"></i>
-                                    </div>
-                                    <input type="text" class="form-control pull-right" id="reservationtime">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-clock-o"></i>
-                                    </div>
-                                    <input type="text" class="form-control pull-right" id="reservationtime">
-
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-
-
-                            <!-- /.form group -->
-
-                        </div>
-                        <!-- /.box-body -->
-
-                    </div>
-
                 </div>
+                <!-- /.Birth Date -->
+                <!-- /.Age -->
+                <div class="col-xs-2">
+                    <label>Age:</label>
+
+                    <input type="number" class="form-control" placeholder="1" autocomplete="off">
+                    <!-- /.Age -->
+                </div>
+                <!-- .Sex -->
+                <div class="col-xs-3">
+                    <label>Gender:</label>
+                    <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Male</option>
+                        <option>Female</option>
+                    </select>
+                    <!-- /.Sex -->
+                </div>
+                <!-- .Address -->
+                <div class="col-xs-12">
+                    <label>Address:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter ..." autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Address -->
+                <!-- .Cell Phone -->
+                <div class="col-xs-6">
+                    <label>Cell Phone Number:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Cell Phone -->
+                <!-- .Home Phone -->
+                <div class="col-xs-6">
+                    <label>Home Phone Number:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Home Phone -->
+                <!-- .Occupation  -->
+                <div class="col-xs-4">
+                    <label>Occupation:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Occupation  -->
+                <!-- .Employer  -->
+                <div class="col-xs-4">
+                    <label>Employer:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Employer  -->
+                <!-- .Employer Contact -->
+                <div class="col-xs-4">
+                    <label>EmployerNumber:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Employer Contact  -->
+                <!-- .Employer Contact -->
+                <div class="col-xs-12">
+                    <label>Reason for Visit:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Reason/reffered by..." autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Employer Contact  -->
+            </form>
+
+            <!-- /.form group -->
         </div>
-    
+
+        <!-- /.box-body -->
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="box box-primary">
+        <div class="text-center">
+            <h3 class="box-title">Insurance Information</h3>
+            <small>(Please give your insurance card to the receptionist.)</small>
+        </div>
+        <div class="box-body">
+            <!-- Date -->
+            <div class="form-group">
+
+                <div class="col-xs-6">
+                    <label>Principle Member:</label>
+                    <input type="text" class="form-control" placeholder="" autocomplete="off">
+                </div>
+                <!-- /.input group -->
+                <!-- /.form group -->
+
+                <div class="col-xs-6">
+                    <label>Birth Date:</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right" id="datepicker">
+                    </div>
+                    <!-- /.input group -->
+                </div>
+                <!-- .Address -->
+                <div class="col-xs-12">
+                    <label>Address (if different):</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter ..." autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Address -->
+                <!-- .Principle Status -->
+                <div class="col-xs-6">
+                    <label>Is the principle a patient here?</label>
+                    <div class="form-group">
+
+
+                        <div class="iradio_minimal-blue checked" aria-checked="true" aria-disabled="false" style="position: relative;"><input type="radio" name="r1" class="minimal" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        Yes
+                        <div class="iradio_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" name="r2" class="minimal" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        No
+
+
+
+                    </div>
+                </div>
+                <!-- .Patient coverage Status -->
+                <div class="col-xs-6">
+                    <label>Is the patient Insured?</label>
+                    <div class="form-group">
+
+                        <div class="iradio_minimal-blue checked" aria-checked="true" aria-disabled="false" style="position: relative;"><input type="radio" name="r1" class="minimal" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        Yes
+                        <div class="iradio_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" name="r2" class="minimal" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        No
+
+
+
+                    </div>
+                </div>
+                <!-- .Occupation  -->
+                <div class="col-xs-6">
+                    <label>Occupation:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Occupation  -->
+                <!-- .Employer  -->
+                <div class="col-xs-6">
+                    <label>Employer:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Employer  -->
+                <!-- .Employer Address  -->
+                <div class="col-xs-7">
+                    <label>Employer Address:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    </div>
+                </div>
+
+                <!-- .Employer Phone -->
+                <div class="col-xs-5">
+                    <label>Employer Phone Number:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Employer Phone  -->
+                <!-- .Primary Insurance -->
+                <div class="col-xs-7">
+                    <label>Please Indicate Primary Insurance:</label>
+                    <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Test Insurance 1</option>
+                        <option>Test Insurance 2</option>
+                        <option>Test Insurance 3</option>
+                        <option>Test Insurance 4</option>
+                        <option>Test Insurance 5</option>
+                    </select>
+                </div>
+                <!-- /.Primary Insurance -->
+                <!-- .Other Insurance  -->
+                <div class="col-xs-5">
+                    <label>Other Insurance:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    </div>
+                </div>
+
+                <!-- .Policy no:  -->
+                <div class="col-xs-7">
+                    <label>Policy No:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    </div>
+                </div>
+                <!-- .Policy no:  -->
+                <div class="col-xs-7">
+                    <label>Subscriber’s name:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Employer  -->
+                <!-- .Birth date:  -->
+                <div class="col-xs-5">
+                    <label>Birth date:</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right" id="datepicker">
+                    </div>
+                </div>
+                <!-- /.Birth date:-->
+                <!-- /.form group -->
+
+            </div>
+            <!-- /.box-body -->
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="col-xs-12">
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Submit or Cancel Entries</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-responsive no-padding">
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <div class="box box-primary">
+                            <div class="box-body">
+                                <form role="form">
+                                    <div class="col-xs-6">
+                                        <button type="button" class="btn btn-block btn-danger">Cancel</button>
+                                    </div>
+                                </form>
+
+
+                                <form role="form">
+                                    <div class="col-xs-6">
+
+                                        <button type="button" class="btn btn-block btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>
+
 

@@ -29,15 +29,19 @@ namespace AlfaWebApplication1
                       "~/admin-lte/css/skins/skin-blue.css",
                       "~/admin-lte/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
                       "~/admin-lte/bower_components/select2/dist/css/select2.min.css",
-                      "~/admin-lte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"));
+                      "~/admin-lte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
+                      "~/admin-lte/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css",
+                      "~/admin-lte/plugins/iCheck/all.css"));
 
             bundles.Add(new ScriptBundle("~/admin-lte/js").Include(
                      "~/admin-lte/js/adminlte.js",
                      "~/admin-lte/plugins/fastclick/fastclick.js",
                      "~/admin-lte/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
                      "~/admin-lte/bower_components/select2/dist/js/select2.full.min.js",
-                     "~/admin-lte/bower_components/bootstrap-datepicker/dist/js/bootstrap - datepicker.min.js"));
-            ;
+                     "~/admin-lte/plugins/iCheck/icheck.min.js",
+                     "~/admin-lte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
+                     "~/admin-lte/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"));
+            
         }
     }
 }
