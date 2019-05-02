@@ -25,7 +25,7 @@
             <form role="form">
                 <div class="col-xs-6">
                     <label>Patient File Number</label>
-                    <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    <input type="text" class="form-control" placeholder="0000 000" autocomplete="off">
                 </div>
 
                 <!-- Enrolled Date -->
@@ -34,7 +34,7 @@
                     <label>Enrolled Date:</label>
 
                     <div class="input-group date">
-                        <div class="col-xs-5">
+                        <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
                         <input type="text" class="form-control pull-right" id="datepicker">
@@ -43,7 +43,7 @@
                 <div class="col-xs-4">
                     <label>Last Name:</label>
 
-                    <input type="text" class="form-control" placeholder="" autocomplete="off">
+                    <input type="text" class="form-control" placeholder="Surname.." autocomplete="off">
                     <!-- /.Email Address -->
                 </div>
                 <!-- /.form group -->
@@ -56,13 +56,13 @@
                 </div>
                 <!-- /.First Name -->
                 <div class="col-xs-4">
-                    <label>Middle Name:</label>
+                    <label>First Name:</label>
 
                     <input type="text" class="form-control" placeholder="" autocomplete="off">
                     <!-- /.Email Address -->
                 </div>
                 <!-- /.Marital status-->
-                <div class="col-xs-3">
+                <div class="col-xs-5">
                     <label>MaritalStatus:</label>
 
                     <div class="form-group">
@@ -76,7 +76,7 @@
                 </div>
                 <!-- /.Birth Date -->
                 <div class="col-xs-4">
-                    <label>Date:</label>
+                    <label>Date Of Birth:</label>
 
                     <div class="input-group date">
                         <div class="input-group-addon">
@@ -88,14 +88,22 @@
                 </div>
                 <!-- /.Birth Date -->
                 <!-- /.Age -->
-                <div class="col-xs-2">
+                <div class="col-xs-3">
                     <label>Age:</label>
 
                     <input type="number" class="form-control" placeholder="1" autocomplete="off">
                     <!-- /.Age -->
                 </div>
+                <!-- .Address -->
+                <div class="col-xs-8">
+                    <label>Address:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Place of residence" autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Address -->
                 <!-- .Sex -->
-                <div class="col-xs-3">
+                <div class="col-xs-4">
                     <label>Gender:</label>
                     <select class="form-control select2" style="width: 100%;">
                         <option selected="selected">Male</option>
@@ -103,14 +111,23 @@
                     </select>
                     <!-- /.Sex -->
                 </div>
-                <!-- .Address -->
-                <div class="col-xs-12">
-                    <label>Address:</label>
+
+                <!-- .Reason for Visit -->
+                <div class="col-xs-6">
+                    <label>Email:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter ..." autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Email Address..." autocomplete="off">
                     </div>
                 </div>
-                <!-- /.Address -->
+                <!-- /.Employer Contact  -->
+                <!-- .Reason for Visit -->
+                <div class="col-xs-6">
+                    <label>National ID No:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email Address..." autocomplete="off">
+                    </div>
+                </div>
+                <!-- /.Employer Contact  -->
                 <!-- .Cell Phone -->
                 <div class="col-xs-6">
                     <label>Cell Phone Number:</label>
@@ -131,7 +148,7 @@
                 <div class="col-xs-4">
                     <label>Occupation:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Career" autocomplete="off">
                     </div>
                 </div>
                 <!-- /.Occupation  -->
@@ -139,7 +156,7 @@
                 <div class="col-xs-4">
                     <label>Employer:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Employer" autocomplete="off">
                     </div>
                 </div>
                 <!-- /.Employer  -->
@@ -151,7 +168,7 @@
                     </div>
                 </div>
                 <!-- /.Employer Contact  -->
-                <!-- .Employer Contact -->
+                <!-- .Reason for Visit -->
                 <div class="col-xs-12">
                     <label>Reason for Visit:</label>
                     <div class="form-group">
@@ -159,6 +176,7 @@
                     </div>
                 </div>
                 <!-- /.Employer Contact  -->
+
             </form>
 
             <!-- /.form group -->
@@ -177,15 +195,19 @@
         <div class="box-body">
             <!-- Date -->
             <div class="form-group">
-
-                <div class="col-xs-6">
-                    <label>Principle Member:</label>
-                    <input type="text" class="form-control" placeholder="" autocomplete="off">
+                <div class="widget-user-header bg-yellow">
+                    <div class="widget-user-image">
+                        <div class="col-xs-5">
+                            <img class="img-circle" src="~/admin-lte/img/user7-128x128.jpg" alt="User Avatar">
+                        </div>
+                    </div>
                 </div>
-                <!-- /.input group -->
-                <!-- /.form group -->
+                <div class="col-xs-7">
+                    <label>Patient Name (Insured):</label>
+                    <input type="text" class="form-control" placeholder="Insured patient Name " autocomplete="off">
+                </div>
 
-                <div class="col-xs-6">
+                <div class="col-xs-7">
                     <label>Birth Date:</label>
                     <div class="input-group date">
                         <div class="input-group-addon">
@@ -199,7 +221,7 @@
                 <div class="col-xs-12">
                     <label>Address (if different):</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter ..." autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Patient's place of residence" autocomplete="off">
                     </div>
                 </div>
                 <!-- /.Address -->
@@ -236,7 +258,7 @@
                 <div class="col-xs-6">
                     <label>Occupation:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Career of Principle" autocomplete="off">
                     </div>
                 </div>
                 <!-- /.Occupation  -->
@@ -244,7 +266,7 @@
                 <div class="col-xs-6">
                     <label>Employer:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Company paying insurance" autocomplete="off">
                     </div>
                 </div>
                 <!-- /.Employer  -->
@@ -252,15 +274,17 @@
                 <div class="col-xs-7">
                     <label>Employer Address:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Address of Company" autocomplete="off">
                     </div>
                 </div>
 
                 <!-- .Employer Phone -->
                 <div class="col-xs-5">
-                    <label>Employer Phone Number:</label>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
+                    <label>Employer Phone No:</label>
+                    <div class="input-group">
+                        <i class="fa fa-phone">
+                            <input type="text" class="form-control" placeholder="0000-000-000" autocomplete="off">
+                        </i>
                     </div>
                 </div>
                 <!-- /.Employer Phone  -->
@@ -280,7 +304,7 @@
                 <div class="col-xs-5">
                     <label>Other Insurance:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Any other insurance" autocomplete="off">
                     </div>
                 </div>
 
@@ -288,19 +312,19 @@
                 <div class="col-xs-7">
                     <label>Policy No:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Membership Number" autocomplete="off">
                     </div>
                 </div>
                 <!-- .Policy no:  -->
-                <div class="col-xs-7">
+                <div class="col-xs-5">
                     <label>Subscriber’s name:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Main Member Name" autocomplete="off">
                     </div>
                 </div>
                 <!-- /.Employer  -->
                 <!-- .Birth date:  -->
-                <div class="col-xs-5">
+                <div class="col-xs-7">
                     <label>Birth date:</label>
                     <div class="input-group date">
                         <div class="input-group-addon">
@@ -309,8 +333,24 @@
                         <input type="text" class="form-control pull-right" id="datepicker">
                     </div>
                 </div>
+
+                <div class="col-xs-5">
+                    <label>Co-payment:</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Amount..." autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <label>Patient Relation to Subcriber:</label>
+                    <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Spouse</option>
+                        <option>Child</option>
+                        <option>Other Dependant</option>
+                    </select>
+                </div>
                 <!-- /.Birth date:-->
                 <!-- /.form group -->
+
 
             </div>
             <!-- /.box-body -->
@@ -321,11 +361,12 @@
 
 </div>
 
-
 <div class="col-xs-12">
     <div class="box">
         <div class="box-header">
-            <h3 class="box-title">Submit or Cancel Entries</h3>
+            <div class="text-center">
+                <h3 class="box-title">In case of Emmergency</h3>
+            </div>
         </div>
         <!-- /.box-header -->
         <div class="box-body table-responsive no-padding">
@@ -335,28 +376,70 @@
                         <div class="box box-primary">
                             <div class="box-body">
                                 <form role="form">
-                                    <div class="col-xs-6">
-                                        <button type="button" class="btn btn-block btn-danger">Cancel</button>
-                                    </div>
-                                </form>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-7">
+                                            <label>Name of local friend or relative (not living at same address):</label>
+                                            <input type="text" class="form-control" placeholder="Name of relative / friend..." autocomplete="off">
+                                        </div>
 
 
-                                <form role="form">
-                                    <div class="col-xs-6">
 
-                                        <button type="button" class="btn btn-block btn-primary">Submit</button>
+                                        <div class="form-group">
+                                            <div class="col-xs-5">
+                                                <label>Relationship to patient:</label>
+                                                <input type="text" class="form-control" placeholder="Relationship to Patient..." autocomplete="off">
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </tr>
-                    
+
                 </tbody>
             </table>
         </div>
         <!-- /.box-body -->
     </div>
     <!-- /.box -->
+</div>
+
+<div class="col-xs-12">
+    <div class="box">
+        <div class="box-header">
+            <div class="text-center">
+                <h3 class="box-title">Submit or Cancel Entries</h3>
+            </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <div class="box box-primary">
+                                <div class="box-body">
+                                    <form role="form">
+                                        <div class="col-xs-6">
+                                            <button type="button" class="btn btn-block btn-danger">Cancel</button>
+                                        </div>
+                                    </form>
+
+
+                                    <form role="form">
+                                        <div class="col-xs-6">
+
+                                            <button type="button" class="btn btn-block btn-primary">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
 </div>
 
 
